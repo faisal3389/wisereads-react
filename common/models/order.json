@@ -1,0 +1,49 @@
+{
+  "name": "Order",
+  "plural": "orders",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "delivery_time": {
+      "type": "date"
+    },
+    "delivery_type": {
+      "type": "string"
+    },
+    "due": {
+      "type": "string"
+    },
+    "order_date": {
+      "type": "date",
+      "required": true
+    },
+    "paid": {
+      "type": "string"
+    },
+    "total_amount": {
+      "type": "string"
+    },
+    "status_id": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "email": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "email"
+    },
+    "order_id": {
+      "type": "hasMany",
+      "model": "OrderItem",
+      "foreignKey": "order_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

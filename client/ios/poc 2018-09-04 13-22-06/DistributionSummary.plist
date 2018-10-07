@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>poc.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>E9DA0BD91D84C65AB6B78C104D14806CF9C0704F</string>
+				<key>dateExpires</key>
+				<string>22/03/19</string>
+				<key>type</key>
+				<string>iOS Development</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>LYJZ7S9M4L.com.vr2020.yogobogo</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>LYJZ7S9M4L</string>
+				<key>get-task-allow</key>
+				<true/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>LYJZ7S9M4L.com.vr2020.yogobogo</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>poc.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>8d6d5673-bbd1-4478-b2df-f70f68a3ba9a</string>
+				<key>name</key>
+				<string>YOGOBOGO APP Development</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>LYJZ7S9M4L</string>
+				<key>name</key>
+				<string>Salvatore Cardu</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

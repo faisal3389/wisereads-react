@@ -1,0 +1,73 @@
+{
+  "name": "Transaction",
+  "plural": "transactions",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "transaction_date": {
+      "type": "date",
+      "required": true
+    },
+    "agent_id": {
+      "type": "string",
+      "required": true
+    },
+    "bookFlag_id": {
+      "type": "string",
+      "required": true
+    },
+    "bookStatus_id": {
+      "type": "string",
+      "required": true
+    },
+    "deliveryType_id": {
+      "type": "string",
+      "required": true
+    },
+    "library_id": {
+      "type": "string",
+      "required": true
+    },
+    "location_id": {
+      "type": "string",
+      "required": true
+    },
+    "owner_id": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "book": {
+      "type": "belongsTo",
+      "model": "Book",
+      "foreignKey": "book_id"
+    },
+    "email": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "email"
+    },
+    "order": {
+      "type": "belongsTo",
+      "model": "Order",
+      "foreignKey": "order_id"
+    },
+    "inventory": {
+      "type": "belongsTo",
+      "model": "Inventory",
+      "foreignKey": "inventoryId"
+    },
+    "orderItem": {
+      "type": "belongsTo",
+      "model": "OrderItem",
+      "foreignKey": "orderItemId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

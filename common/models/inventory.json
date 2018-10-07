@@ -1,0 +1,60 @@
+{
+  "name": "Inventory",
+  "plural": "inventories",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "book_id": {
+      "type": "string",
+      "required": true
+    },
+    "no_of_books_available": {
+      "type": "number"
+    },
+    "available_date": {
+      "type": "date"
+    },
+    "book_rent_price": {
+      "type": "string"
+    },
+    "book_sale_price": {
+      "type": "string"
+    },
+    "isAvailable": {
+      "type": "boolean",
+      "required": true
+    },
+    "isBuyable": {
+      "type": "boolean",
+      "required": true
+    },
+    "isRental": {
+      "type": "boolean",
+      "required": true
+    },
+    "total_no_of_books": {
+      "type": "string"
+    },
+    "library_id": {
+      "type": "string",
+      "required": true
+    },
+    "owner_id": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "books": {
+      "type": "hasMany",
+      "model": "Book",
+      "foreignKey": "inventoryId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

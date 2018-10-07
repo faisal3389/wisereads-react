@@ -1,0 +1,38 @@
+{
+  "name": "react-electron",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.32.3",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.0.17"
+  },
+  "devDependencies": {
+    "electron": "^1.7.10",
+    "electron-builder": "^19.52.1",
+    "foreman": "^2.0.0"
+  },
+  "scripts": {
+    "dev": "nf start",
+    "start": "PORT=3006 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "ebuild": "yarn build && electron ."
+  },
+  "description": "Wise Reads",
+  "main": "electron/main.js",
+  "build": {
+    "productName": "Wise Reads Desktop App",
+    "appId": "",
+    "homepage":"./",
+    "electronVersion": "1.7.10",
+    "files": [
+      "build/**/*",
+      "electron/*"
+    ]
+  }
+}

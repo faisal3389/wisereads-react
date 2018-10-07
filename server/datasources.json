@@ -1,0 +1,32 @@
+{
+  "db": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "wisereads",
+    "password": "",
+    "name": "db",
+    "user": "me",
+    "connector": "mongodb",
+    "useNewUrlParser":true
+  },
+  "emailDs": {
+    "name": "emailDs",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "admin@wisereads.in",
+          "pass": "Wisereads.12345"
+        }
+      }
+    ]
+  }
+}

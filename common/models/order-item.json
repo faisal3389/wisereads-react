@@ -1,0 +1,63 @@
+{
+  "name": "OrderItem",
+  "plural": "orderitems",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "book_price": {
+      "type": "string",
+      "required": true
+    },
+    "desire_date": {
+      "type": "date"
+    },
+    "order_date": {
+      "type": "date",
+      "required": true
+    },
+    "release_date": {
+      "type": "date"
+    },
+    "book_id": {
+      "type": "string",
+      "required": true
+    },
+    "bookStatus_id": {
+      "type": "string",
+      "required": true
+    },
+    "customer_id": {
+      "type": "string",
+      "required": true
+    },
+    "destination_id": {
+      "type": "string",
+      "required": true
+    },
+    "library_id": {
+      "type": "string",
+      "required": true
+    },
+    "owner_id": {
+      "type": "string",
+      "required": true
+    },
+    "source_id": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "order": {
+      "type": "belongsTo",
+      "model": "Order",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
